@@ -2,7 +2,9 @@
 
 in this project , we implemented 2 uses cases of a covid-19 vaccination app following the Mvvm architecture style . which is a software architectural pattern that facilitates the separation of the development of the graphical user interface (the view) from the development of the business logic or back-end logic (the model) so that the view is not dependent on any specific model platform.
 
-
+   the uses cases are : 
+    - consult and update profile 
+    - consult vaccins list 
 
 ## Components of MVVM pattern
   
