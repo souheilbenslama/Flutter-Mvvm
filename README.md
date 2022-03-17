@@ -1,16 +1,21 @@
-# archi_mvvm_app
+# Flutter_MVVM_APP
 
-A new Flutter project.
+in this project , we implemented 2 uses cases of a covid-19 vaccination app following the Mvvm architecture style . which is a software architectural pattern that facilitates the separation of the development of the graphical user interface (the view) from the development of the business logic or back-end logic (the model) so that the view is not dependent on any specific model platform.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Components of MVVM pattern
+  
+ ** ### Model **
+The model represents a single source of truth that carries the real-time fetch data or database-related queries.
+This layer can contain business logic, code validation, etc. This layer interacts with ViewModel for local data or for real-time. Data are given in response to ViewModel.
+ ### ** ViewModel **
+ViewModel is the mediator between View and Model, which accept all the user events and request that to Model for data. Once the Model has data then it returns to ViewModel and then ViewModel notify that data to View.
+ViewModel can be used by multiple views, which means a single ViewModel can provide data to more than one View.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ ### ** View ** 
+The view is where the user is interacting with Widgets that are shown on the screen. These user events request some actions which navigate to ViewModel, and the rest of ViewModel does the job. Once ViewModel has the required data then it updates View.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+!(https://www.journaldev.com/wp-content/uploads/2018/04/android-mvvm-pattern.png) [mvvm model image ]
